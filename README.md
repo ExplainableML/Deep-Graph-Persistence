@@ -11,10 +11,13 @@ For calculating NP, we rely on the [great code](https://github.com/BorgwardtLab/
 Besides standard dependencies available via `pip`, this repository also requires the `Aleph` library.
 Detailed instructions on how to install `Aleph` can be found in the [corresponding repository](https://github.com/Pseudomanifold/Aleph).
 
-After installing `Aleph`, the remaining dependencies can be installed from `requirements.txt` via TODO.
+After installing `Aleph`, the remaining dependencies can be installed from [requirements.txt](requirements.txt) via 
+```
+pip install -r requirement.txt
+```
 
 ## Replication
-TODO.
+Code and detailed instructions will be added by September 2023.
 
 ## References
 TODO.
