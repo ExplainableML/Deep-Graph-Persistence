@@ -8,7 +8,7 @@ Also, this repository contains code for replicating our experiments on using dee
 For calculating NP, we rely on the [great code](https://github.com/BorgwardtLab/Neural-Persistence) from the original [Neural Persistence: A Complexity Measure for Deep Neural Networks Using Algebraic Topology](https://arxiv.org/abs/1812.09764) paper.
 
 ## Setup
-Besides standard dependencies available via `pip`, this repository also requires `Aleph`.
+Besides standard dependencies available via `pip`, this repository also requires the `Aleph` library.
 Detailed instructions on how to install `Aleph` can be found in the [corresponding repository](https://github.com/Pseudomanifold/Aleph).
 
 After installing `Aleph`, the remaining dependencies can be installed from `requirements.txt` via TODO.
