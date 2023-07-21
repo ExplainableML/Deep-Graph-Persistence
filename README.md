@@ -1,5 +1,5 @@
 # Deep Graph Persistence
-This is the code for our work "Addressing caveats of neural persistence with deep graph persistence".
+This is the code for our work [Addressing caveats of neural persistence with deep graph persistence](https://arxiv.org/abs/2307.10865).
 
 ## Overview
 This repository contains code for replicating our empirical experiments regarding neural persistence (NP) in trained neural networks.
