@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --ntasks=1                # Number of tasks (see below)
+#SBATCH --cpus-per-task=1         # Number of CPU cores per task
+#SBATCH --time=0-11:30             # Runtime in D-HH:MM
+#SBATCH --nodes=1                 # Ensure that all cores are on one machine
+#SBATCH --partition=cpu-short       # Partition (job queue)
+#SBATCH --output=./slurm_logs/witness_vectors_%j.out
+#SBATCH --error=./slurm_logs/witness_vectors_%j.err
+
+# print info about current job
+scontrol show job $SLURM_JOB_ID 
+
+# insert your commands here
+data_path=./saved_data/shifted_data/$dataset/train\=1000_test=1000_seed\=112.npy
+model_path=./saved_models/data\=$dataset-hidden\=$hidden-layers\=$layers/run_$run/
+
+python make_witness_vectors.py \
+    --dataset $data_path \
+    --model-name data\=$dataset-hidden\=$hidden-layers\=$layers-run\=$run \
+    --model-path $model_path \
+    --shift $shift \
+    --intensity $intensity \
+    --method $method
