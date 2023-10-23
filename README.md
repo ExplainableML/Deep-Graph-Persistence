@@ -1,5 +1,12 @@
-# Deep Graph Persistence
+<div align="center">
+
+  # Deep Graph Persistence
+
+</div>
+
 This is the code for our work [Addressing caveats of neural persistence with deep graph persistence](https://arxiv.org/abs/2307.10865).
+<br>
+**Update 21/10/2023**: Our paper has been accepted to TMLR. More details will appear soon.
 
 ## Overview
 This repository contains code for replicating our empirical experiments regarding neural persistence (NP) in trained neural networks.
@@ -96,7 +103,7 @@ while setting the appropriate parameters. The following parameters are required:
   * `--method`: The method used for extracting image representations. Options are: `softmax`, `logit`, `magdiff`, `dgp`, `dgp_normalize`, `dgp_var`, `dgp_var_normalize`, `dgp_approximate`, `dgp_var_approximate`, `topological`, `topological_var`, `input_activation` as defined in [witness_functions.py](src/dgp-shift-detection/witness_functions.py)
 
 
-#### Calculate evaluation metrics
+#### 4. Calculate evaluation metrics
 Finally, we evaluate the accuracy of detecting corrupted image (batches) by running
 ```bash
 python magdiff_evaluation.py
