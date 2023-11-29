@@ -6,7 +6,12 @@
 
 This is the code for our work [Addressing caveats of neural persistence with deep graph persistence](https://arxiv.org/abs/2307.10865).
 <br>
-**Update 21/10/2023**: Our paper has been accepted to TMLR. More details will appear soon.
+Our paper has been accepted to [TMLR](https://jmlr.org/tmlr/). You can find it at the following locations:
+  * OpenReview: https://openreview.net/forum?id=oyfRWeoUJY
+  * OpenReview (pdf): https://openreview.net/pdf?id=oyfRWeoUJY
+  * arXiv: https://arxiv.org/abs/2307.10865
+
+Also, we have prepared a video presentation summarizing the main findings: https://youtu.be/KfCpoPYK_CY
 
 ## Overview
 This repository contains code for replicating our empirical experiments regarding neural persistence (NP) in trained neural networks.
@@ -121,5 +126,15 @@ These parameters specify the MLP model and the type of corruption for which repr
 Results will be saved in a subdirectory of `./evaluation_results`.
 
 ## References
-Under construction.
-We are currently preparing the reference to our paper accepted to TMLR. 
+
+If you use this code, please cite
+```bib
+@article{
+    girrbach2023addressing,
+    title={Addressing caveats of neural persistence with deep graph persistence},
+    author={Leander Girrbach and Anders Christensen and Ole Winther and Zeynep Akata and A. Sophia Koepke},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2023}
+}
+```
